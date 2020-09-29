@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Flight Fare prediction</title>
+    </head>
+
+
+    <body>
+
+        <form>
+            <h2>Departure Date</h2>
+            <input type="datetime-local" name='DEP_TIME' required='required'>
+
+            <h3>Source</h3>
+            <select name='Source' required='required'>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+
+            <h3>Destination</h3>
+            <select name='Destination' required='required'>
+                <option value="Cochin">Cochin</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+
+            <h3>Total Stops</h3>
+            <select name='stops' required='required'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <h2>Airlines</h2>
+            <select name="airline">
+                <option value="Jet Airways">Jet Airways</option>
+                <option value="IndiGo">IndiGo</option>
+                <option value="Air India">Air India</option>
+                <option value="Multiple carriers">Multiple carriers</option>
+                <option value="SpiceJet">SpiceJet</option>
+                <option value="Vistara">Vistara</option>
+                <option value="Air Asia">Air Asia</option>
+                <option value="GoAir">GoAir</option>
+                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                </option>
+                <option value="Jet Airways Business">Jet Airways Business</option>
+                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                <option value="Trujet">Trujet</option>
+            </select>
+
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <h3>{{prediction}}</h3>
+
+
+    </body>
+
+
+</html>
